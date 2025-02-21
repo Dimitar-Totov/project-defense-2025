@@ -18,7 +18,7 @@ export default function HomeSection() {
             </div>
             <div className="container">
                 <div className="welcome-hero-txt">
-                    <h2>best place to find and explore all you need </h2>
+                    <h2>best places to find and explore all you need for your trip </h2>
                 </div>
 
             </div>
