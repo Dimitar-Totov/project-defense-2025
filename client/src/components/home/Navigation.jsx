@@ -1,4 +1,4 @@
-export default function TopAreaSection() {
+export default function Navigation() {
     return (
         <section className="top-area">
             <div className="header-area">
@@ -8,16 +8,14 @@ export default function TopAreaSection() {
                             <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
                                 <i className="fa fa-bars"></i>
                             </button>
-                            <a className="navbar-brand" href="index.html">best<span>places</span></a>
+                            <a className="navbar-brand" href="/">best<span>places</span></a>
                         </div>
                         <div className="collapse navbar-collapse menu-ui-design" id="navbar-menu">
                             <ul className="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
-                                <li className="scroll"><a href="#home">home</a></li>
-                                <li className="scroll"><a href="#works">how it works</a></li>
-                                <li className="scroll"><a href="#explore">explore</a></li>
-                                <li className="scroll"><a href="#reviews">review</a></li>
-                                <li className="scroll"><a href="#blog">blog</a></li>
-                                <li className="scroll"><a href="#contact">contact</a></li>
+                                <li className="scroll"><a href="/">home</a></li>
+                                <li className="scroll"><a href="#explore">catalog</a></li>
+                                <li className="scroll"><a href="#contact">create destination</a></li>
+                                <li className="scroll"><a href="/about">about</a></li>
                                 <li className="scroll"><a href="#contact">register</a></li>
                                 <li className="scroll"><a href="#contact">login</a></li>
                             </ul>
