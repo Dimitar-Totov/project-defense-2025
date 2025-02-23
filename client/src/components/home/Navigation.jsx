@@ -14,10 +14,10 @@ export default function Navigation() {
                             <ul className="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
                                 <li className="scroll"><a href="/">home</a></li>
                                 <li className="scroll"><a href="#explore">catalog</a></li>
-                                <li className="scroll"><a href="#contact">create destination</a></li>
+                                <li className="scroll"><a href="/create">create destination</a></li>
                                 <li className="scroll"><a href="/about">about</a></li>
-                                <li className="scroll"><a href="#contact">register</a></li>
-                                <li className="scroll"><a href="#contact">login</a></li>
+                                <li className="scroll"><a href="/auth/register">register</a></li>
+                                <li className="scroll"><a href="/auth/login">login</a></li>
                             </ul>
                         </div>
                     </div>
