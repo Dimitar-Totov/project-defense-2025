@@ -13,7 +13,7 @@ export default function Navigation() {
                         <div className="collapse navbar-collapse menu-ui-design" id="navbar-menu">
                             <ul className="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
                                 <li className="scroll"><a href="/">home</a></li>
-                                <li className="scroll"><a href="#explore">catalog</a></li>
+                                <li className="scroll"><a href="/catalog">catalog</a></li>
                                 <li className="scroll"><a href="/create">create destination</a></li>
                                 <li className="scroll"><a href="/about">about</a></li>
                                 <li className="scroll"><a href="/auth/register">register</a></li>

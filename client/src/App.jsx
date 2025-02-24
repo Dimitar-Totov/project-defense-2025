@@ -6,13 +6,14 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Login from "./components/auth/Login";
 import Register from "./components/auth/Register";
 import CreateDestination from "./components/create/Create";
+import Catalog from "./components/catalog/Catalog";
 export default function App() {
   return (
     <Router>
       <Navigation />
       <Routes>
         <Route path="/" element={<HomeSection />} />
-        {/* <Route path="/catalog" element={<Catalog />} /> /> */}     
+        <Route path="/catalog" element={<Catalog />} /> 
         <Route path="/auth/register" element={<Register />} />  
         <Route path="/auth/login" element={<Login />} />
         <Route path="/create" element={<CreateDestination />} />
