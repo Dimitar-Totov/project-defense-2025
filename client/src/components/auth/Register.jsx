@@ -1,4 +1,11 @@
+import { useEffect, useRef } from "react"
+
 export default function Register() {
+
+    const inputRef = useRef();
+    useEffect(() => {
+        inputRef.current.focus();
+    })
 
     return (
         <>
@@ -6,7 +13,7 @@ export default function Register() {
                 <form className="register-form">
                     <h2>Register</h2>
                     <div className="register-input">
-                        <input type="text" id="username" required />
+                        <input type="text" id="username" ref={inputRef} required />
                             <label for="username">Username</label>
                     </div>
                     <div className="register-input">

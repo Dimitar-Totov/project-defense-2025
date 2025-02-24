@@ -1,4 +1,11 @@
+import { useEffect, useRef } from "react"
+
 export default function Login() {
+
+    const inputRef = useRef();
+    useEffect(() => {
+        inputRef.current.focus();
+    })
 
     return (
         <>
@@ -7,7 +14,7 @@ export default function Login() {
                     <h2>Login</h2>
                     <div className="login-input">
                         <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="Enter your email" required />
+                        <input type="email" id="email" name="email" ref={inputRef} placeholder="Enter your email" required />
                     </div>
                     <div className="login-input">
                         <label for="password">Password</label>
