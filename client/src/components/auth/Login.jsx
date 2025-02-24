@@ -5,7 +5,7 @@ export default function Login() {
     const inputRef = useRef();
     useEffect(() => {
         inputRef.current.focus();
-    })
+    },[])
 
     return (
         <>

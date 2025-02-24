@@ -5,7 +5,7 @@ export default function Register() {
     const inputRef = useRef();
     useEffect(() => {
         inputRef.current.focus();
-    })
+    },[])
 
     return (
         <>
