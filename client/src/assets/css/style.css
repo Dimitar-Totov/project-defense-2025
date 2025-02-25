@@ -729,9 +729,34 @@ nav.navbar.bootsnav ul.nav>li.dropdown span {
     box-shadow: 0 0 10px rgba(255, 94, 98, 0.4);
     transform: scale(1.05);
 }
-
 /* Button styling */
+.register-form button {
+    width: 30%;
+    padding: 12px;
+    background: #ff758c;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-top: 10px;
+    opacity: 0;
+    animation: slideIn 1s ease-in-out forwards;
+    animation-delay: 0.4s;
+    border-radius: 15px;
+}
 
+/* Button hover & active effects */
+.register-form button:hover {
+    background: #ff5e78;
+    box-shadow: 0 5px 15px rgba(255, 94, 120, 0.4);
+    transform: scale(1.05);
+}
+
+.register-form button:active {
+    transform: scale(0.95);
+}
 
 .register-link a {
     color: #ff758c;
