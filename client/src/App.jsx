@@ -1,8 +1,8 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import About from "./components/about/About";
 import Footer from "./components/footer/Footer";
 import HomeSection from "./components/home/HomeSection";
 import Navigation from "./components/home/Navigation";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Login from "./components/auth/Login";
 import Register from "./components/auth/Register";
 import CreateDestination from "./components/create/Create";
