@@ -11,7 +11,7 @@ export default function CreateDestination() {
                             <label for="location">Location</label>
                         </div>
                         <div className="create-input">
-                            <input type="text" id="name" name="country" required />
+                            <textarea id="country" name="country" required></textarea>
                             <label for="name">Country</label>
                         </div>
                         <div className="create-input">

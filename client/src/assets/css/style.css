@@ -438,36 +438,10 @@ nav.navbar.bootsnav ul.nav>li.dropdown span {
     }
 }
 
-/* Keyframe Animations */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-30px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes slideIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
 /* Create */
 .create-parent-div {
     display: flex;
     gap: 20px;
-
 }
 
 .create-div-info {
@@ -502,7 +476,6 @@ nav.navbar.bootsnav ul.nav>li.dropdown span {
     border: 1px solid #ddd;
     flex: 1;
 }
-
 /* Form styling */
 .create-form h2 {
     margin-bottom: 20px;
@@ -519,7 +492,6 @@ nav.navbar.bootsnav ul.nav>li.dropdown span {
     animation-delay: 0.2s;
 }
 
-.create-input input,
 .create-input textarea {
     width: 70%;
     padding: 12px;
@@ -545,8 +517,6 @@ nav.navbar.bootsnav ul.nav>li.dropdown span {
     pointer-events: none;
 }
 
-.create-input input:focus+label,
-.create-input input:valid+label,
 .create-input textarea:focus+label,
 .create-input textarea:valid+label {
     top: 10px;
@@ -554,7 +524,6 @@ nav.navbar.bootsnav ul.nav>li.dropdown span {
     color: #ff5e62;
 }
 
-.create-input input:focus,
 .create-input textarea:focus {
     border-color: #ff5e62;
     box-shadow: 0 0 10px rgba(255, 94, 98, 0.4);
