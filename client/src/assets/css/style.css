@@ -295,7 +295,7 @@ nav.navbar.bootsnav ul.nav>li.dropdown span {
     color: #fff;
     width: 180px;
     height: 70px;
-    background: #ff545a;
+    background: #ff758c;
     text-transform: capitalize;
     margin-left: 30px;
     border-radius: 3px;
@@ -321,15 +321,15 @@ nav.navbar.bootsnav ul.nav>li.dropdown span {
 .login-container {
     background: white;
     padding: 30px;
-    border-radius: 10px;
+    border-radius: 50px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     text-align: center;
     opacity: 0;
     transform: translateY(-30px);
     animation: fadeIn 0.8s ease-in-out forwards;
-    max-width: fit-content;
     margin-left: auto;
     margin-right: auto;
+    width: 40%;
 }
 
 /* Form styling */
@@ -341,43 +341,53 @@ nav.navbar.bootsnav ul.nav>li.dropdown span {
 }
 
 .login-input {
-    margin-bottom: 15px;
-    text-align: left;
+    position: relative;
+    margin-bottom: 20px;
     opacity: 0;
     animation: slideIn 1s ease-in-out forwards;
     animation-delay: 0.2s;
 }
 
-.login-input label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
-    color: #555;
-}
-
-/* Input field effects */
 .login-input input {
-    width: 100%;
-    padding: 10px;
+    width: 50%;
+    padding: 12px;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
-    transition: all 0.3s ease-in-out;
     outline: none;
+    transition: all 0.3s ease-in-out;
 }
 
-/* Glow effect on focus */
+/* Floating label effect */
+.login-input label {
+    position: absolute;
+    top: 60%;
+    left: 12px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #999;
+    transition: all 0.3s ease-in-out;
+    pointer-events: none;
+}
+
+.login-input input:focus+label,
+.login-input input:valid+label {
+    top: 10px;
+    font-size: 15px;
+    color: #ff5e62;
+}
+
 .login-input input:focus {
-    border-color: #764ba2;
-    box-shadow: 0 0 10px rgba(118, 75, 162, 0.4);
+    border-color: #ff5e62;
+    box-shadow: 0 0 10px rgba(255, 94, 98, 0.4);
     transform: scale(1.05);
 }
 
 /* Button styling */
 .login-form button {
-    width: 100%;
-    padding: 10px;
-    background: #764ba2;
+    width: 30%;
+    padding: 12px;
+    background: #ff758c;
     color: white;
     font-size: 18px;
     border: none;
@@ -388,12 +398,13 @@ nav.navbar.bootsnav ul.nav>li.dropdown span {
     opacity: 0;
     animation: slideIn 1s ease-in-out forwards;
     animation-delay: 0.4s;
+    border-radius: 15px;
 }
 
 /* Button hover & active effects */
 .login-form button:hover {
-    background: #ff545a;
-    box-shadow: 0 5px 15px rgba(118, 75, 162, 0.4);
+    background: #ff5e78;
+    box-shadow: 0 5px 15px rgba(255, 94, 120, 0.4);
     transform: scale(1.05);
 }
 
@@ -401,24 +412,6 @@ nav.navbar.bootsnav ul.nav>li.dropdown span {
     transform: scale(0.95);
 }
 
-/* Register link */
-.register-link {
-    margin-top: 10px;
-    font-size: 14px;
-    opacity: 0;
-    animation: slideIn 1s ease-in-out forwards;
-    animation-delay: 0.6s;
-}
-
-.register-link a {
-    color: #764ba2;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.register-link a:hover {
-    text-decoration: underline;
-}
 
 /* Keyframe Animations */
 @keyframes fadeIn {
@@ -443,120 +436,6 @@ nav.navbar.bootsnav ul.nav>li.dropdown span {
         opacity: 1;
         transform: translateY(0);
     }
-}
-
-/* Register container */
-.register-container {
-    background: white;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    opacity: 0;
-    transform: translateY(-30px);
-    animation: fadeIn 0.8s ease-in-out forwards;
-    max-width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* Form styling */
-.register-form h2 {
-    margin-bottom: 20px;
-    color: #333;
-    opacity: 0;
-    animation: slideIn 1s ease-in-out forwards;
-}
-
-/* Input group with floating labels */
-.register-input {
-    position: relative;
-    margin-bottom: 20px;
-    opacity: 0;
-    animation: slideIn 1s ease-in-out forwards;
-    animation-delay: 0.2s;
-}
-
-.register-input input {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-    outline: none;
-    transition: all 0.3s ease-in-out;
-}
-
-.register-input label {
-    position: absolute;
-    top: 50%;
-    left: 12px;
-    transform: translateY(-50%);
-    font-size: 16px;
-    color: #999;
-    transition: all 0.3s ease-in-out;
-    pointer-events: none;
-}
-
-/* Floating label effect */
-.register-input input:focus+label,
-.register-input input:valid+label {
-    top: 5px;
-    font-size: 12px;
-    color: #ff758c;
-}
-
-.register-input input:focus {
-    border-color: #ff758c;
-    box-shadow: 0 0 10px rgba(255, 117, 140, 0.4);
-    transform: scale(1.05);
-}
-
-/* Button styling */
-.register-form button {
-    width: 100%;
-    padding: 12px;
-    background: #ff758c;
-    color: white;
-    font-size: 18px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-    margin-top: 10px;
-    opacity: 0;
-    animation: slideIn 1s ease-in-out forwards;
-    animation-delay: 0.4s;
-}
-
-/* Button hover & active effects */
-.register-form button:hover {
-    background: #ff5e78;
-    box-shadow: 0 5px 15px rgba(255, 94, 120, 0.4);
-    transform: scale(1.05);
-}
-
-.register-form button:active {
-    transform: scale(0.95);
-}
-
-/* Login link */
-.login-link {
-    margin-top: 10px;
-    font-size: 14px;
-    opacity: 0;
-    animation: slideIn 1s ease-in-out forwards;
-    animation-delay: 0.6s;
-}
-
-.login-link a {
-    color: #ff758c;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.login-link a:hover {
-    text-decoration: underline;
 }
 
 /* Keyframe Animations */
@@ -592,7 +471,7 @@ nav.navbar.bootsnav ul.nav>li.dropdown span {
 }
 
 .create-div-info {
-    width: 30%;
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
     animation: fadeIn 0.8s ease-in-out forwards;
@@ -601,18 +480,17 @@ nav.navbar.bootsnav ul.nav>li.dropdown span {
     border-radius: 20px;
 }
 
-.create-div-info p{
+.create-div-info p {
     font-size: 20px;
     font-family: cursive;
 }
 
-.create-div-info h2{
+.create-div-info h2 {
     font-size: 30px;
     font-family: 'Times New Roman', Times, serif;
 }
 
 .create-container {
-    width: 30%;
     background: white;
     border-radius: 20px;
     box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
@@ -631,6 +509,82 @@ nav.navbar.bootsnav ul.nav>li.dropdown span {
     color: #333;
     opacity: 0;
     animation: slideIn 1s ease-in-out forwards;
+}
+
+.create-input {
+    position: relative;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: slideIn 1s ease-in-out forwards;
+    animation-delay: 0.2s;
+}
+
+.create-input input,
+.create-input textarea {
+    width: 70%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    height: 60px;
+    resize: none;
+    margin-left: 50px;
+}
+
+/* Floating label effect */
+.create-input label {
+    position: absolute;
+    top: 60%;
+    left: 12px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #999;
+    transition: all 0.3s ease-in-out;
+    pointer-events: none;
+}
+
+.create-input input:focus+label,
+.create-input input:valid+label,
+.create-input textarea:focus+label,
+.create-input textarea:valid+label {
+    top: 10px;
+    font-size: 15px;
+    color: #ff5e62;
+}
+
+.create-input input:focus,
+.create-input textarea:focus {
+    border-color: #ff5e62;
+    box-shadow: 0 0 10px rgba(255, 94, 98, 0.4);
+    transform: scale(1.05);
+}
+
+.create-form button {
+    width: 30%;
+    padding: 12px;
+    background: #ff5e62;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-top: 10px;
+    animation-delay: 0.4s;
+    border-radius: 15px;
+}
+
+/* Button hover & active effects */
+.create-form button:hover {
+    background: #e54b4f;
+    box-shadow: 0 5px 15px rgba(255, 94, 98, 0.4);
+    transform: scale(1.05);
+}
+
+.create-form button:active {
+    transform: scale(0.95);
 }
 
 /* Catalog */
@@ -724,6 +678,27 @@ nav.navbar.bootsnav ul.nav>li.dropdown span {
 }
 
 /* Register */
+.register-container {
+    background: white;
+    padding: 30px;
+    border-radius: 50px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    opacity: 0;
+    transform: translateY(-30px);
+    animation: fadeIn 0.8s ease-in-out forwards;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+.register-form h2 {
+    margin-bottom: 20px;
+    color: #333;
+    opacity: 0;
+    animation: slideIn 1s ease-in-out forwards;
+}
+
 .register-input {
     position: relative;
     margin-bottom: 20px;
@@ -732,9 +707,8 @@ nav.navbar.bootsnav ul.nav>li.dropdown span {
     animation-delay: 0.2s;
 }
 
-.register-input input,
-.register-input textarea {
-    width: 100%;
+.register-input input {
+    width: 50%;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -743,15 +717,10 @@ nav.navbar.bootsnav ul.nav>li.dropdown span {
     transition: all 0.3s ease-in-out;
 }
 
-.register-input textarea {
-    height: 80px;
-    resize: none;
-}
-
 /* Floating label effect */
 .register-input label {
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 12px;
     transform: translateY(-50%);
     font-size: 16px;
@@ -761,26 +730,23 @@ nav.navbar.bootsnav ul.nav>li.dropdown span {
 }
 
 .register-input input:focus+label,
-.register-input input:valid+label,
-.register-input textarea:focus+label,
-.register-input textarea:valid+label {
-    top: 5px;
-    font-size: 12px;
+.register-input input:valid+label {
+    top: 10px;
+    font-size: 15px;
     color: #ff5e62;
 }
 
-.register-input input:focus,
-.register-input textarea:focus {
+.register-input input:focus {
     border-color: #ff5e62;
     box-shadow: 0 0 10px rgba(255, 94, 98, 0.4);
     transform: scale(1.05);
 }
 
 /* Button styling */
-.create-form button {
-    width: 100%;
+.register-form button {
+    width: 30%;
     padding: 12px;
-    background: #ff5e62;
+    background: #ff758c;
     color: white;
     font-size: 18px;
     border: none;
@@ -788,18 +754,39 @@ nav.navbar.bootsnav ul.nav>li.dropdown span {
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     margin-top: 10px;
+    opacity: 0;
+    animation: slideIn 1s ease-in-out forwards;
     animation-delay: 0.4s;
+    border-radius: 15px;
 }
 
-/* Button hover & active effects */
-.create-form button:hover {
-    background: #e54b4f;
-    box-shadow: 0 5px 15px rgba(255, 94, 98, 0.4);
+.register-form button:hover {
+    background: #ff5e78;
+    box-shadow: 0 5px 15px rgba(255, 94, 120, 0.4);
     transform: scale(1.05);
 }
 
-.create-form button:active {
+.register-form button:active {
     transform: scale(0.95);
+}
+
+.register-link a {
+    color: #ff758c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Register link */
+.register-link {
+    margin-top: 10px;
+    font-size: 14px;
+    opacity: 0;
+    animation: slideIn 1s ease-in-out forwards;
+    animation-delay: 0.6s;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
 }
 
 /* Keyframe Animations */

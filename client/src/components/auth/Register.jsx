@@ -29,7 +29,7 @@ export default function Register() {
                             <label for="confirm-password">Confirm Password</label>
                     </div>
                     <button type="submit">Sign Up</button>
-                    <p className="login-link">Already have an account? <a href="/auth/login">Login</a></p>
+                    <p className="register-link">Already have an account? <a href="/auth/login">Login</a></p>
                 </form>
             </div>
         </>

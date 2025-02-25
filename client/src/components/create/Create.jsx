@@ -3,27 +3,30 @@ export default function CreateDestination() {
     return (
         <>
             <div className="create-parent-div">
-                <div className="create-div-info">
-                    <h2>Enjoy your travelling:</h2>
-
-                    <p>Traveling around the world opens your eyes to new cultures, allowing you to experience life through a different lens.Exploring new countries offers the chance to taste diverse cuisines, each with its own unique flavor and history.You gain a deeper appreciation for the planet’s beauty, from stunning natural landscapes to vibrant cityscapes.</p>
-                </div>
                 <div className="create-container">
                     <form className="create-form">
                         <h2>Create Destination</h2>
-                        <div className="register-input">
+                        <div className="create-input">
+                            <textarea id="location" name="location" required></textarea>
+                            <label for="location">Location</label>
+                        </div>
+                        <div className="create-input">
                             <input type="text" id="name" name="country" required />
                             <label for="name">Country</label>
                         </div>
-                        <div className="register-input">
+                        <div className="create-input">
                             <textarea id="destination" name="destinationName" required></textarea>
-                            <label for="destinationName">Destination name</label>
+                            <label for="destinationName">Name</label>
                         </div>
-                        <div className="register-input">
+                        <div className="create-input">
                             <textarea id="image" name="image" required></textarea>
                             <label for="image">Image url</label>
                         </div>
-                        <div className="register-input">
+                        <div className="create-input">
+                            <textarea id="bestTime" name="bestTime" required></textarea>
+                            <label for="bestTime">Best time to visit</label>
+                        </div>
+                        <div className="create-input">
                             <textarea id="description" name="description" required></textarea>
                             <label for="description">Description</label>
                         </div>
