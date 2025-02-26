@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Navigation() {
     return (
         <section className="top-area">
@@ -8,16 +10,16 @@ export default function Navigation() {
                             <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
                                 <i className="fa fa-bars"></i>
                             </button>
-                            <a className="navbar-brand" href="/">best<span>places</span></a>
+                            <Link className="navbar-brand" to="/">best<span>places</span></Link>
                         </div>
                         <div className="collapse navbar-collapse menu-ui-design" id="navbar-menu">
                             <ul className="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
-                                <li className="scroll"><a href="/">home</a></li>
-                                <li className="scroll"><a href="/catalog">catalog</a></li>
-                                <li className="scroll"><a href="/create">create destination</a></li>
-                                <li className="scroll"><a href="/about">about</a></li>
-                                <li className="scroll"><a href="/auth/register">register</a></li>
-                                <li className="scroll"><a href="/auth/login">login</a></li>
+                                <li className="scroll"><Link to="/">home</Link></li>
+                                <li className="scroll"><Link to="/catalog">catalog</Link></li>
+                                <li className="scroll"><Link to="/create">create destination</Link></li>
+                                <li className="scroll"><Link to="/about">about</Link></li>
+                                <li className="scroll"><Link to="/auth/register">register</Link></li>
+                                <li className="scroll"><Link to="/auth/login">login</Link></li>
                             </ul>
                         </div>
                     </div>
