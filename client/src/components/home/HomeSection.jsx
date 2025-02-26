@@ -9,7 +9,7 @@ export default function HomeSection() {
                         </form>
                     </div>
                     <div className="welcome-hero-serch">
-                        <button className="welcome-hero-btn" onclick="window.location.href='#'">
+                        <button className="welcome-hero-btn">
                             search  <i data-feather="search"></i>
                         </button>
                     </div>
