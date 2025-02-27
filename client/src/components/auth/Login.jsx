@@ -1,3 +1,4 @@
+import styles from './login.module.css'
 import { useEffect, useRef } from "react"
 
 export default function Login() {
@@ -9,19 +10,19 @@ export default function Login() {
 
     return (
         <>
-            <div className="login-container">
-                <form className="login-form">
+            <div className={styles.container}>
+                <form className={styles.form}>
                     <h2>Login</h2>
-                    <div className="login-input">
-                        <input type="email" id="email" name="email" ref={inputRef}  required />
+                    <div className={styles.input}>
+                        <input type="email" id="email" name="email" ref={inputRef} autoComplete='on' required />
                         <label htmlFor="email">Email</label>
                     </div>
-                    <div className="login-input">
-                        <input type="password" id="password" name="password"  required />
+                    <div className={styles.input}>
+                        <input type="password" id="password" name="password" autoComplete='on' required />
                         <label htmlFor="password">Password</label>
                     </div>
                     <button type="submit">Login</button>
-                    <p className="register-link">Don't have an account? <a href="/auth/register">Sign up</a></p>
+                    <p className={styles.link}>Don't have an account? <a href="/auth/register">Sign up</a></p>
                 </form>
             </div>
         </>
