@@ -1,19 +1,20 @@
+import styles from './footer.module.css'
 export default function Footer() {
 
     return (
         <>
-            <footer className="footer">
-                <div className="footer-container">
-                    <div className="footer-section">
-                        <ul className="footer-ul">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Catalog</a></li>
-                            <li><a href="#">Create Destination</a></li>
-                            <li><a href="#">Contact</a></li>
+            <footer className={styles.footer}>
+                <div className={styles.container}>
+                    <div className={styles.section}>
+                        <ul className={styles.ul}>
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/catalog">Catalog</a></li>
+                            <li><a href="/create">Create Destination</a></li>
+                            <li><a href="/about">Contact</a></li>
                         </ul>
                     </div>
                 </div>
-                <div className="footer-bottom">
+                <div className={styles.bottom}>
                     © 2025 All rights reserved.
                 </div>
             </footer>

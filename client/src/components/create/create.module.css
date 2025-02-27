@@ -1,0 +1,131 @@
+.parent {
+    display: flex;
+    gap: 20px;
+}
+
+.info {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    animation: fadeIn 0.8s ease-in-out forwards;
+    padding: 40px;
+    border: 2px ridge #ddd;
+    border-radius: 20px;
+}
+
+.info p {
+    font-size: 20px;
+    font-family: cursive;
+}
+
+.info h2 {
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    animation: fadeIn 0.8s ease-in-out forwards;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px;
+    border: 1px solid #ddd;
+    flex: 1;
+}
+
+.form h2 {
+    margin-bottom: 20px;
+    color: #333;
+    opacity: 0;
+    animation: slideIn 1s ease-in-out forwards;
+}
+
+.input {
+    position: relative;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: slideIn 1s ease-in-out forwards;
+    animation-delay: 0.2s;
+}
+
+.input textarea {
+    width: 70%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    height: 60px;
+    resize: none;
+    margin-left: 50px;
+}
+
+.input label {
+    position: absolute;
+    top: 60%;
+    left: 12px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #999;
+    transition: all 0.3s ease-in-out;
+    pointer-events: none;
+}
+
+.input textarea:focus+label,
+.input textarea:valid+label {
+    top: 10px;
+    font-size: 15px;
+    color: #ff5e62;
+}
+
+.input textarea:focus {
+    border-color: #ff5e62;
+    box-shadow: 0 0 10px rgba(255, 94, 98, 0.4);
+    transform: scale(1.05);
+}
+
+.form button {
+    width: 30%;
+    padding: 12px;
+    background: #ff5e62;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-top: 10px;
+    animation-delay: 0.4s;
+    border-radius: 15px;
+}
+
+.form button:hover {
+    background: #e54b4f;
+    box-shadow: 0 5px 15px rgba(255, 94, 98, 0.4);
+    transform: scale(1.05);
+}
+
+.form button:active {
+    transform: scale(0.95);
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 0, 4;
+    }
+}
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
