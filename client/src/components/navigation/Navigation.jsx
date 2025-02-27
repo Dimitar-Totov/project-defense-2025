@@ -10,7 +10,7 @@ export default function Navigation() {
                             <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
                                 <i className="fa fa-bars"></i>
                             </button>
-                            <Link className="navbar-brand" to="/">best<span>places</span></Link>
+                            <Link className="navbar-brand" to="/">travel<span>agency</span></Link>
                         </div>
                         <div className="collapse navbar-collapse menu-ui-design" id="navbar-menu">
                             <ul className="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
