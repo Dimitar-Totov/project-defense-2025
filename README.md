@@ -11,4 +11,5 @@
 * Import components in App.jsx
 ## 3.Add React Router
 * Install `npm i react-router-dom`
+* Add Browser router in main.jsx
 * Add routes in App.jsx
