@@ -8,27 +8,27 @@ export default function CreateDestination() {
                         <h2>Create Destination</h2>
                         <div className="create-input">
                             <textarea id="location" name="location" required></textarea>
-                            <label for="location">Location</label>
+                            <label htmlFor="location">Location</label>
                         </div>
                         <div className="create-input">
                             <textarea id="country" name="country" required></textarea>
-                            <label for="name">Country</label>
+                            <label htmlFor="name">Country</label>
                         </div>
                         <div className="create-input">
                             <textarea id="destination" name="destinationName" required></textarea>
-                            <label for="destinationName">Name</label>
+                            <label htmlFor="destinationName">Name</label>
                         </div>
                         <div className="create-input">
                             <textarea id="image" name="image" required></textarea>
-                            <label for="image">Image url</label>
+                            <label htmlFor="image">Image url</label>
                         </div>
                         <div className="create-input">
                             <textarea id="bestTime" name="bestTime" required></textarea>
-                            <label for="bestTime">Best time to visit</label>
+                            <label htmlFor="bestTime">Best time to visit</label>
                         </div>
                         <div className="create-input">
                             <textarea id="description" name="description" required></textarea>
-                            <label for="description">Description</label>
+                            <label htmlFor="description">Description</label>
                         </div>
                         <button type="submit">Create</button>
                     </form>
